@@ -58,7 +58,7 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         ButterKnife.bind(this);
-setupNetwork();
+        setupNetwork();
         idClickListner();
 
 
@@ -179,12 +179,11 @@ setupNetwork();
         edt_Email.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                if (hasFocus){
+                if (hasFocus) {
                     ((InputMethodManager) SignUpActivity.this.getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE)).showSoftInput(SignUpActivity.this.edt_Email, 2);
                     edt_Email.setHint(getResources().getString(R.string.emailhint_text));
 
-                }
-                else
+                } else
                     edt_Email.setHint("");
             }
         });
@@ -242,6 +241,7 @@ setupNetwork();
         };
         mApiManager = new ApiManager(this, mInterFace);
     }
+
     public void makeRegister() {
         if (Constants.checkInternet(SignUpActivity.this)) {
             Map<String, String> params = new HashMap<String, String>();
