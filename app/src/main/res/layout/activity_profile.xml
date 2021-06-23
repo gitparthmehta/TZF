@@ -34,7 +34,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/delius"
+
                         android:gravity="center"
                         android:text="Profile"
                         android:textColor="@color/white"
@@ -89,7 +89,7 @@
                             android:layout_height="wrap_content"
                             android:drawableLeft="@drawable/name"
                             android:drawableTint="@color/white"
-                            android:fontFamily="@font/delius"
+
                             android:drawablePadding="@dimen/common_15_size"
                             android:singleLine="true"
                             android:textColor="@color/white"
@@ -112,7 +112,7 @@
                             android:id="@+id/edtPhoneNumber"
                             android:layout_width="match_parent"
                             android:drawableTint="@color/white"
-                            android:fontFamily="@font/delius"
+
                             android:layout_height="wrap_content"
                             android:drawableLeft="@drawable/phone"
                             android:drawablePadding="@dimen/common_15_size"
@@ -141,7 +141,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawableTint="@color/white"
-                            android:fontFamily="@font/delius"
+
                             android:drawableLeft="@drawable/dob"
                             android:drawablePadding="@dimen/common_15_size"
                             android:focusable="false"
@@ -162,7 +162,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
-                            android:fontFamily="@font/delius"
+
                             android:text="@string/date_text"
                             android:textColor="@color/light_text_color"
                             android:textSize="@dimen/common_small_text_size" />
@@ -186,7 +186,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
-                            android:fontFamily="@font/delius"
+
                             android:text="@string/aadharcard_text"
                             android:textColor="@color/white"
                             android:textSize="@dimen/common_small_text_size" />
@@ -207,7 +207,7 @@
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="@dimen/common_20_size"
-                        android:fontFamily="@font/delius"
+
                         android:paddingLeft="@dimen/common_30_size"
                         android:paddingRight="@dimen/common_30_size"
                         android:text="@string/next_text"
@@ -242,7 +242,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/delius"
+
                         android:gravity="center"
                         android:text="Profile"
                         android:textColor="@color/white"
@@ -299,7 +299,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawableTint="@color/white"
-                            android:fontFamily="@font/delius"
+
                             android:drawableLeft="@drawable/ic_date"
                             android:drawablePadding="@dimen/common_15_size"
                             android:focusable="false"
@@ -312,7 +312,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:fontFamily="@font/delius"
+
                         android:text="@string/designation_text"
                         android:textColor="@color/white"
                         android:textSize="@dimen/common_small_text_size"
@@ -345,7 +345,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawableTint="@color/white"
-                            android:fontFamily="@font/delius"
+
                             android:drawableLeft="@drawable/name"
                             android:drawablePadding="@dimen/common_15_size"
                             android:singleLine="true"
@@ -364,7 +364,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
-                            android:fontFamily="@font/delius"
+
                             android:text="@string/resume_text"
                             android:textColor="@color/white"
                             android:textSize="@dimen/common_small_text_size" />
@@ -385,7 +385,7 @@
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="@dimen/common_20_size"
-                        android:fontFamily="@font/delius"
+
                         android:paddingLeft="@dimen/common_30_size"
                         android:paddingRight="@dimen/common_30_size"
                         android:text="@string/next_text"
@@ -420,7 +420,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/delius"
+
                         android:gravity="center"
                         android:text="Profile"
                         android:textColor="@color/white"
@@ -453,7 +453,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:clickable="true"
-                            android:fontFamily="@font/delius"
+
                             android:text="@string/termandcondition_text"
                             android:textColor="@color/white"
                             android:textSize="16sp" />
@@ -464,7 +464,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
                         android:clickable="true"
-                        android:fontFamily="@font/delius"
+
                         android:text="@string/warning_text"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -476,7 +476,7 @@
                         android:backgroundTint="@color/btn_background"
                         android:layout_gravity="center"
                         android:layout_marginTop="@dimen/common_20_size"
-                        android:fontFamily="@font/delius"
+
                         android:paddingLeft="@dimen/common_30_size"
                         android:paddingRight="@dimen/common_30_size"
                         android:text="@string/contactus_text"
@@ -489,7 +489,7 @@
                         android:backgroundTint="@color/btn_background"
                         android:layout_gravity="center"
                         android:layout_marginTop="@dimen/common_20_size"
-                        android:fontFamily="@font/delius"
+
                         android:paddingLeft="@dimen/common_30_size"
                         android:paddingRight="@dimen/common_30_size"
                         android:text="@string/submit_text"

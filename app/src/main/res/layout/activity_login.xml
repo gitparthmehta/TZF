@@ -24,7 +24,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                android:fontFamily="@font/delius"
+
                 android:gravity="center"
                 android:text="@string/login_title"
                 android:textColor="@color/white"
@@ -96,7 +96,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/common_10_size"
                 android:backgroundTint="@color/btn_background"
-                android:fontFamily="@font/delius"
+
                 android:paddingLeft="@dimen/common_30_size"
                 android:paddingRight="@dimen/common_30_size"
                 android:text="@string/login_text"
@@ -108,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/common_20_size"
-                android:fontFamily="@font/delius"
+
                 android:text="@string/forgotpassword_text"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
@@ -119,7 +119,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="12dp"
-                android:fontFamily="@font/delius"
+
                 android:text="@string/newsignup_text"
                 android:textColor="@color/white"
                 android:textSize="15sp" />

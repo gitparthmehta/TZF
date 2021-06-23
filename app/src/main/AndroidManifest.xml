@@ -8,8 +8,6 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
@@ -21,8 +19,30 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/logo_ic"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
+        android:theme="@style/NoToolbar_AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".Screens.Activities.TenureCompletionActivity"></activity>
+        <activity android:name=".Screens.Activities.RewardHistoryActivity" />
+        <activity android:name=".Screens.Activities.RedeemActivity" />
+        <activity android:name=".Screens.Activities.DonateActivity" />
+        <activity android:name=".Screens.Activities.RewardCoinsActivity" />
+        <activity android:name=".Screens.Activities.InActiveParticipantActivity" />
+        <activity android:name=".Screens.Activities.ActiveParticipantActivity" />
+        <activity android:name=".Screens.Activities.SuccessfulParticipantActivity" />
+        <activity
+            android:name=".Screens.Activities.RefferalCodeActivity"
+            android:theme="@style/NoToolbar_AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Screens.Activities.HomeActivity"
+            android:theme="@style/NoToolbar_AppTheme"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Screens.Activities.SplashScreen"
             android:screenOrientation="portrait"
@@ -35,25 +55,24 @@
             </intent-filter>
         </activity>
         <activity
-
             android:name=".Screens.Activities.ResetPasswordActivity"
-            android:theme="@style/NoToolbar_AppTheme"
             android:screenOrientation="portrait"
+            android:theme="@style/NoToolbar_AppTheme"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:theme="@style/NoToolbar_AppTheme"
             android:name=".Screens.Activities.ForgotPasswordActivity"
             android:screenOrientation="portrait"
+            android:theme="@style/NoToolbar_AppTheme"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:theme="@style/NoToolbar_AppTheme"
             android:name=".Screens.Activities.ProfileActivity"
             android:screenOrientation="portrait"
+            android:theme="@style/NoToolbar_AppTheme"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".Screens.Activities.SignUpActivity"
-            android:theme="@style/NoToolbar_AppTheme"
             android:screenOrientation="portrait"
+            android:theme="@style/NoToolbar_AppTheme"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".Screens.Activities.LoginActivity"
