@@ -6,6 +6,7 @@
     <string name="forgotpassword_title">Forgot Password</string>
     <string name="resetpassword_title">Reset Password</string>
     <string name="profile_title">Profile</string>
+    <string name="editprofile_title">Edit Profile</string>
 
 
     //login textfield
@@ -37,6 +38,7 @@
 
     <string name="name_text">Name *</string>
     <string name="phone_text">Phone number *</string>
+    <string name="mobile">Mobile</string>
     <string name="date_text">Date of Birth *</string>
     <string name="aadharcard_text">Aadhar Card *</string>
     <string name="startdate_text">Start Date</string>
@@ -61,9 +63,15 @@
     <string name="next_text">Next</string>
     <string name="sharenow_text">Share Now</string>
     <string name="donatetext">DONATE</string>
+    <string name="description">Description</string>
     <string name="redeemtext">REDEEM</string>
     <string name="descriptionTxt">Description</string>
     <string name="rewardhistorytxt">REWARD HISTORY</string>
+    <string name="tenureCompletiontxt">Tenure Completion</string>
+    <string name="congratulationstxt">congratulations!!!</string>
+    <string name="upload">UPLOAD!!!</string>
+    <string name="uploadbtn">UPLOAD</string>
+    <string name="download">DOWNLOAD </string>
 
     <string-array name="locale_array">
         <item>Select Designation *</item>
@@ -90,6 +98,9 @@
     <string name="activeTxt">Active participants</string>
     <string name="successTxt">Successful participants</string>
     <string name="inactiveTxt">InActive participants</string>
+    <string name="fundraiserTxt">FUNDRAISER </string>
+    <string name="activitytrackertxt">Activity Tracker </string>
+    <string name="LeaderboardTxt">Leaderboard </string>
     <string name="noteTxt">Note: For getting rewards your active participants should atleast rise Rs.750.</string>
 
 
@@ -102,7 +113,25 @@
     <string name="thankyoutxt">Thankyou for your hardwork and completing you tenure. We appreciate it and are thankful.</string>
     <string name="amazonetxt">Your amazon coupons will be sent to you on your registered email-id.</string>
     <string name="donatelines">You have worked hard for the money that you donated to us. appreciate it and are thankful.</string>
-    <string name="donateTxt2">We’ve got a lot of work ahead of us, and your donation has made it that much easier to get things done and thrust us forward
-</string>
+    <string name="donateTxt2">We’ve got a lot of work ahead of us, and your donation has made it that much easier to get things done and thrust us forward</string>
+    <string name="donemsgtxt">You have successfully completed your internship at TareZameen Foundation.</string>
+    <string name="continuemsg">Do you want to continue working at TareZameen Foundation?</string>
+    <string name="yesnotxt">Yes/No</string>
+    <string name="videolinktxt">Please upload a testimonial video sharing your experiance working at TareZameen Foundation.*</string>
+    <string name="ratefoundation">Please rate our foundation at the link given below.*</string>
+    <string name="rateonplaystore">Please rate our app on playstore (link below)*</string>
+    <string name="donemsg">If done , please confirm by clicking here</string>
+    <string name="notemsg">* marked field are mandatory</string>
+    <string name="sorrymsg">Sorry! But unfortunately you have not raised minimum required fund for the organization.</string>
+    <string name="accountactivationmsg">Your account will be active for the next 1 month please do the needful by raising the minimum fund required to
+    duly receive your internship at the earliest</string>
+
+    <string name="raisedamount">Your raised amount is Rs 1250</string>
+    <string name="minimumamount">The minimum required amount is Rs 1250</string>
+    <string name="goodworktxt">It was great working and having you onboard with us !!! </string>
+    <string name="falltxt">You fall under the Bronze category!</string>
+    <string name="downloadcerificate">Please download your certificate.</string>
+    <string name="clickherelink">Please click here to access the link</string>
+    <string name="emailsenttxt">You will also shortly receive your certificate on your registered email ID </string>
 
 </resources>

@@ -59,9 +59,9 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
-        edt_Email.setText("anil@gmail.com");
-        edt_Password.setText("123456");
-        setupNetwork();
+//        edt_Email.setText("anil@gmail.com");
+//        edt_Password.setText("123456");
+//        setupNetwork();
         idClickListner();
     }
 
@@ -69,23 +69,23 @@ public class LoginActivity extends AppCompatActivity {
         btn_Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                makeRegister();
-//                if (edt_Email.getText().toString().isEmpty()) {
-//                    layoutEmail.setError(getResources().getString(R.string.emailerror_msg));
-//                } else if (edt_Password.getText().toString().isEmpty()) {
-//                    layoutPassword.setError(getResources().getString(R.string.passworderror_msg));
-//                } else if (!edt_Email.getText().toString().trim().matches(emailPattern)) {
-//                    layoutEmail.setError(getResources().getString(R.string.notvalidemail_msg));
-//
-//                }else if (!edt_Password.getText().toString().trim().matches(passwordPattern)) {
-//                    layoutPassword.setError(getResources().getString(R.string.notvalidpassword_msg));
-//
-//                } else {
-//
+//                makeRegister();
+                if (edt_Email.getText().toString().isEmpty()) {
+                    layoutEmail.setError(getResources().getString(R.string.emailerror_msg));
+                } else if (edt_Password.getText().toString().isEmpty()) {
+                    layoutPassword.setError(getResources().getString(R.string.passworderror_msg));
+                } else if (!edt_Email.getText().toString().trim().matches(emailPattern)) {
+                    layoutEmail.setError(getResources().getString(R.string.notvalidemail_msg));
+
+                }else if (!edt_Password.getText().toString().trim().matches(passwordPattern)) {
+                    layoutPassword.setError(getResources().getString(R.string.notvalidpassword_msg));
+
+                } else {
+
 //                    makeRegister();
-////                    Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
-////                    startActivity(intent);
-//                }
+                    Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
+                    startActivity(intent);
+                }
 
             }
         });
@@ -155,6 +155,9 @@ public class LoginActivity extends AppCompatActivity {
         edt_Password.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    ((InputMethodManager) LoginActivity.this.getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE)).showSoftInput(LoginActivity.this.edt_Password, 2);
+                }
                 if (hasFocus)
                     edt_Password.setHint(getResources().getString(R.string.passwordhint_text));
                 else

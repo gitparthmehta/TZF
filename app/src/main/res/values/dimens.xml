@@ -17,6 +17,8 @@
     <dimen name="common_30_size">30dp</dimen>
     <dimen name="common_8_size">8dp</dimen>
     <dimen name="common_20_size">20dp</dimen>
+    <dimen name="common_18_size">18sp</dimen>
+    <dimen name="common_16_size">16sp</dimen>
     <dimen name="common_15_size">15dp</dimen>
     <dimen name="common_22_size">22dp</dimen>
     <dimen name="common_25_size">25dp</dimen>

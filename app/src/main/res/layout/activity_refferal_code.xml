@@ -10,6 +10,7 @@
 
     <RelativeLayout
         android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/referalBg"
@@ -38,6 +39,7 @@
     </RelativeLayout>
 
     <ScrollView
+        android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar">
@@ -359,6 +361,12 @@
 
         </LinearLayout>
     </ScrollView>
-
+    <include
+        android:id="@+id/bottombar"
+        layout="@layout/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollview"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>

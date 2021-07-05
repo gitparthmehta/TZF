@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.tarezameen.foundation.R;
@@ -23,7 +24,8 @@ public class RefferalCodeActivity extends AppCompatActivity {
 
     @BindView(R.id.inactiveParticipantLayout)
     RelativeLayout inactiveParticipantLayout;
-
+    @BindView(R.id.secondBack)
+    ImageView secondBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,14 @@ public class RefferalCodeActivity extends AppCompatActivity {
     }
 
     private void ClickListners() {
+
+        secondBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RefferalCodeActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
         sucessfulParticipantLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

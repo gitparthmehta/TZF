@@ -12,15 +12,13 @@ import com.tarezameen.foundation.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class DonateActivity extends AppCompatActivity {
-
+public class FundraiserActivity extends AppCompatActivity {
     @BindView(R.id.secondBack)
     ImageView secondBack;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_donate);
+        setContentView(R.layout.activity_fundraiser);
         ButterKnife.bind(this);
 
         ClickListner();
@@ -31,7 +29,7 @@ public class DonateActivity extends AppCompatActivity {
         secondBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DonateActivity.this, RewardCoinsActivity.class);
+                Intent intent = new Intent(FundraiserActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });

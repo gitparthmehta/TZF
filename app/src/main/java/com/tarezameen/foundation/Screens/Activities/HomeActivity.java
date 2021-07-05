@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
@@ -36,13 +37,22 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawer;
 
     @BindView(R.id.referalLayout)
-    LinearLayout ReferalLayout;
+    RelativeLayout ReferalLayout;
 
     @BindView(R.id.rewardLayout)
-    LinearLayout rewardLayout;
+    RelativeLayout rewardLayout;
+
+    @BindView(R.id.tenureCompletiondLayout)
+    RelativeLayout tenureCompletiondLayout;
+    @BindView(R.id.fundraiserLayout)
+    LinearLayout fundraiserLayout;
+    @BindView(R.id.LeaderBoardLayout)
+    LinearLayout LeaderBoardLayout;
 
     @BindView(R.id.edtUserName)
     TextView edtUserName;
+    @BindView(R.id.userProfileTxt)
+    TextView userProfileTxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +76,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private void ClickHandle() {
         ReferalLayout.setOnClickListener(this);
         edtUserName.setOnClickListener(this);
+        userProfileTxt.setOnClickListener(this);
         rewardLayout.setOnClickListener(this);
+        tenureCompletiondLayout.setOnClickListener(this);
+        fundraiserLayout.setOnClickListener(this);
+        LeaderBoardLayout.setOnClickListener(this);
     }
 
     @Override
@@ -106,13 +120,25 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 Intent i1 = new Intent(HomeActivity.this, RefferalCodeActivity.class);
                 startActivity(i1);
                 break;
-            case R.id.edtUserName:
-                Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
+            case R.id.userProfileTxt:
+                Intent intent = new Intent(HomeActivity.this, UserProfileActivity.class);
                 startActivity(intent);
                 break;
             case R.id.rewardLayout:
                 Intent reward = new Intent(HomeActivity.this, RewardCoinsActivity.class);
                 startActivity(reward);
+                break;
+            case R.id.tenureCompletiondLayout:
+                Intent tc = new Intent(HomeActivity.this, TenureCompletionActivity.class);
+                startActivity(tc);
+                break;
+            case R.id.fundraiserLayout:
+                Intent fn = new Intent(HomeActivity.this, FundraiserActivity.class);
+                startActivity(fn);
+                break;
+            case R.id.LeaderBoardLayout:
+                Intent lb = new Intent(HomeActivity.this, LeaderBoardActivity.class);
+                startActivity(lb);
                 break;
         }
     }

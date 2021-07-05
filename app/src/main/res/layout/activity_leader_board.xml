@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:orientation="vertical"
+    tools:context=".Screens.Activities.LeaderBoardActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/purple"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/secondBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/common_20_size"
+            android:background="@drawable/ic_backarrow"
+            android:backgroundTint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/common_30_size"
+            android:layout_marginRight="@dimen/common_20_size"
+            android:layout_toRightOf="@+id/secondBack"
+            android:gravity="center"
+            android:text="@string/LeaderboardTxt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_20_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/common_30_size"
+            android:gravity="center"
+            android:text="(Points)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_20_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollview"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/common_15_size"
+                android:layout_marginTop="@dimen/common_10_size"
+                android:layout_marginRight="@dimen/common_15_size"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:divider="@android:color/white"
+                android:dividerHeight="0.0px"
+                android:elevation="8dp"
+                app:cardCornerRadius="@dimen/common_15_size"
+                card_view:cardElevation="10dp"
+                card_view:cardPreventCornerOverlap="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_22_size"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/person" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/common_30_size"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="Priya"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_20_size"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/common_30_size"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="5000"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_20_size"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/common_15_size"
+                android:layout_marginTop="@dimen/common_10_size"
+                android:layout_marginRight="@dimen/common_15_size"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:divider="@android:color/white"
+                android:dividerHeight="0.0px"
+                android:elevation="8dp"
+                app:cardCornerRadius="@dimen/common_15_size"
+                card_view:cardElevation="10dp"
+                card_view:cardPreventCornerOverlap="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_22_size"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/person" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/common_30_size"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="Priya"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_20_size"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/common_30_size"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="5000"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_20_size"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/common_15_size"
+                android:layout_marginTop="@dimen/common_10_size"
+                android:layout_marginRight="@dimen/common_15_size"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:divider="@android:color/white"
+                android:dividerHeight="0.0px"
+                android:elevation="8dp"
+                app:cardCornerRadius="@dimen/common_15_size"
+                card_view:cardElevation="10dp"
+                card_view:cardPreventCornerOverlap="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="3"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_22_size"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/person" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/common_30_size"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="Priya"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_20_size"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/common_30_size"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="5000"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_20_size"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/common_15_size"
+                android:layout_marginTop="@dimen/common_10_size"
+                android:layout_marginRight="@dimen/common_15_size"
+                android:gravity="start"
+                android:text="Your Rank"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_25_size"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/common_15_size"
+                android:layout_marginTop="@dimen/common_10_size"
+                android:layout_marginRight="@dimen/common_15_size"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:divider="@android:color/white"
+                android:dividerHeight="0.0px"
+                android:elevation="8dp"
+                app:cardCornerRadius="@dimen/common_15_size"
+                card_view:cardElevation="10dp"
+                card_view:cardPreventCornerOverlap="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_22_size"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/person" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/common_30_size"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="Priya"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_20_size"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/common_30_size"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="5000"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_20_size"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/common_15_size"
+                android:layout_marginTop="@dimen/common_20_size"
+                android:layout_marginRight="@dimen/common_15_size"
+                android:gravity="start"
+                android:text="Note: Your total points are a reflection of how you've performed in the activities, fundraisers,referrals. for the organization."
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_18_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/common_15_size"
+                android:layout_marginTop="@dimen/common_10_size"
+                android:layout_marginRight="@dimen/common_15_size"
+                android:gravity="start"
+                android:text="Increase your rank"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_25_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottombar"
+        layout="@layout/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollview"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

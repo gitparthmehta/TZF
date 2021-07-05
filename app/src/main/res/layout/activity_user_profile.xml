@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.Activities.UserProfileActivity">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/secondBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/common_20_size"
+            android:background="@drawable/ic_backarrow"
+            android:backgroundTint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/profile_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_20_size"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@drawable/userprofile_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/common_30_size"
+                    android:background="@drawable/person" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Test USer"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_20_size"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/userProfileBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/common_20_size"
+                    android:background="@drawable/edittext_rectnagle"
+                    android:backgroundTint="@color/orange"
+                    android:paddingLeft="@dimen/common_30_size"
+                    android:paddingRight="@dimen/common_30_size"
+                    android:text="Edit Profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_18_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_20_size"
+                android:layout_marginTop="@dimen/common_20_size"
+                android:layout_marginRight="@dimen/common_20_size"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/purple"
+                    android:textSize="@dimen/common_18_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/common_10_size"
+                    android:background="@drawable/edittext_rectnagle"
+                    android:backgroundTint="@color/edittext_bg"
+                    android:gravity="center"
+                    android:text="Email@gmail.com"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/common_18_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_10_size"
+                    android:text="Designation"
+                    android:textColor="@color/purple"
+                    android:textSize="@dimen/common_18_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/common_10_size"
+                    android:background="@drawable/edittext_rectnagle"
+                    android:backgroundTint="@color/edittext_bg"
+                    android:gravity="center"
+                    android:text="@string/fundraiserTxt"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/common_18_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_10_size"
+                    android:text="Download your offer letter"
+                    android:textColor="@color/purple"
+                    android:textSize="@dimen/common_18_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/common_10_size"
+                    android:background="@drawable/edittext_rectnagle"
+                    android:backgroundTint="@color/edittext_bg"
+                    android:gravity="center"
+                    android:text="Click here to download"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/common_18_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_10_size"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_10_size"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_10_size"
+                            android:text="Date of Birth"
+                            android:textColor="@color/purple"
+                            android:textSize="@dimen/common_18_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/common_10_size"
+                            android:background="@drawable/edittext_rectnagle"
+                            android:backgroundTint="@color/edittext_bg"
+                            android:gravity="center"
+                            android:text="80/10/2000"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/common_18_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_10_size"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_10_size"
+                            android:text="Mobile"
+                            android:textColor="@color/purple"
+                            android:textSize="@dimen/common_18_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/common_10_size"
+                            android:background="@drawable/edittext_rectnagle"
+                            android:backgroundTint="@color/edittext_bg"
+                            android:gravity="center"
+                            android:text="+91 1234567890"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/common_18_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_10_size"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_10_size"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_10_size"
+                            android:text="@string/startdate_text"
+                            android:textColor="@color/purple"
+                            android:textSize="@dimen/common_18_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/common_10_size"
+                            android:background="@drawable/edittext_rectnagle"
+                            android:backgroundTint="@color/edittext_bg"
+                            android:gravity="center"
+                            android:text="80/10/2000"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/common_18_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_10_size"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_10_size"
+                            android:text="End Date"
+                            android:textColor="@color/purple"
+                            android:textSize="@dimen/common_18_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/common_10_size"
+                            android:background="@drawable/edittext_rectnagle"
+                            android:backgroundTint="@color/edittext_bg"
+                            android:gravity="center"
+                            android:text="+91 1234567890"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/common_18_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

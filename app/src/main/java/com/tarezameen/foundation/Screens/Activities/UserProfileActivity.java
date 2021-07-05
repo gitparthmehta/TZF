@@ -5,33 +5,34 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.tarezameen.foundation.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class DonateActivity extends AppCompatActivity {
+public class UserProfileActivity extends AppCompatActivity {
 
-    @BindView(R.id.secondBack)
-    ImageView secondBack;
-
+    @BindView(R.id.userProfileBtn)
+    Button userProfileBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_donate);
+        setContentView(R.layout.activity_user_profile);
+
         ButterKnife.bind(this);
 
-        ClickListner();
+        ClickListners();
 
     }
 
-    private void ClickListner() {
-        secondBack.setOnClickListener(new View.OnClickListener() {
+    private void ClickListners() {
+        userProfileBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DonateActivity.this, RewardCoinsActivity.class);
+                Intent intent=new Intent(UserProfileActivity.this,EditProfileActivity.class);
                 startActivity(intent);
             }
         });

@@ -21,7 +21,19 @@
         android:supportsRtl="true"
         android:theme="@style/NoToolbar_AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Screens.Activities.TenureCompletionActivity"></activity>
+        <activity android:name=".Screens.Activities.EditProfileActivity"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Screens.Activities.UserProfileActivity" />
+        <activity android:name=".Screens.Activities.ActivityTrackerActivity" />
+        <activity android:name=".Screens.Activities.LeaderBoardActivity" />
+        <activity android:name=".Screens.Activities.FundraiserActivity" />
+        <activity android:name=".Screens.Activities.TenureCompletionActivity" />
         <activity android:name=".Screens.Activities.RewardHistoryActivity" />
         <activity android:name=".Screens.Activities.RedeemActivity" />
         <activity android:name=".Screens.Activities.DonateActivity" />
@@ -37,22 +49,24 @@
             android:name=".Screens.Activities.HomeActivity"
             android:theme="@style/NoToolbar_AppTheme"
             android:windowSoftInputMode="adjustPan">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".Screens.Activities.SplashScreen"
             android:screenOrientation="portrait"
             android:theme="@style/NoToolbar_AppTheme"
             android:windowSoftInputMode="adjustPan">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
         <activity
             android:name=".Screens.Activities.ResetPasswordActivity"

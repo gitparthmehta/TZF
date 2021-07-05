@@ -58,12 +58,12 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         ButterKnife.bind(this);
-        setupNetwork();
+//        setupNetwork();
         idClickListner();
 
 
-        edt_Email.setText("divya.soni@specificstep.com");
-        edt_Password.setText("Admin@123");
+//        edt_Email.setText("divya.soni@specificstep.com");
+//        edt_Password.setText("Admin@123");
     }
 
     private void idClickListner() {
@@ -105,9 +105,9 @@ public class SignUpActivity extends AppCompatActivity {
                     }
 
                 } else {
-                    makeRegister();
-//                    Intent intent = new Intent(SignUpActivity.this, ProfileActivity.class);
-//                    startActivity(intent);
+//                    makeRegister();
+                    Intent intent = new Intent(SignUpActivity.this, ProfileActivity.class);
+                    startActivity(intent);
                 }
             }
         });
@@ -179,6 +179,7 @@ public class SignUpActivity extends AppCompatActivity {
         edt_Email.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
+
                 if (hasFocus) {
                     ((InputMethodManager) SignUpActivity.this.getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE)).showSoftInput(SignUpActivity.this.edt_Email, 2);
                     edt_Email.setHint(getResources().getString(R.string.emailhint_text));
@@ -190,6 +191,12 @@ public class SignUpActivity extends AppCompatActivity {
         edt_Password.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
+
+                if (hasFocus) {
+                    ((InputMethodManager) SignUpActivity.this.getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE)).showSoftInput(SignUpActivity.this.edt_Password, 2);
+                    edt_Email.setHint(getResources().getString(R.string.emailhint_text));
+
+                }
                 if (hasFocus)
                     edt_Password.setHint(getResources().getString(R.string.passwordhint_text));
                 else
@@ -199,6 +206,12 @@ public class SignUpActivity extends AppCompatActivity {
         edt_referralcode.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
+
+                if (hasFocus) {
+                    ((InputMethodManager) SignUpActivity.this.getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE)).showSoftInput(SignUpActivity.this.edt_referralcode, 2);
+                    edt_Email.setHint(getResources().getString(R.string.emailhint_text));
+
+                }
                 if (hasFocus)
                     edt_referralcode.setHint(getResources().getString(R.string.referalcode_text));
                 else

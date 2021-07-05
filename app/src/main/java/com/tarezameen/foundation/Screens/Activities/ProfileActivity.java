@@ -79,6 +79,9 @@ public class ProfileActivity extends AppCompatActivity implements DatePickerDial
     private String selectedImagePath;
     int datePickerInput;
 
+    @BindView(R.id.btnSubmit)
+    Button btnSubmit;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -163,7 +166,13 @@ public class ProfileActivity extends AppCompatActivity implements DatePickerDial
 
 
     private void clickListner() {
-
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
         this.edtDateOfBirth.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 try {
@@ -288,12 +297,11 @@ public class ProfileActivity extends AppCompatActivity implements DatePickerDial
     }
 
 
-
     @Override
     public void onDateSet(com.tsongkha.spinnerdatepicker.DatePicker view, int year, int monthOfYear, int dayOfMonth) {
         Date date = null;
         try {
-            date = new SimpleDateFormat("yyyy,MM,dd").parse(String.valueOf(year) + "," + String.valueOf(monthOfYear +1 ) + "," + String.valueOf(dayOfMonth));
+            date = new SimpleDateFormat("yyyy,MM,dd").parse(String.valueOf(year) + "," + String.valueOf(monthOfYear + 1) + "," + String.valueOf(dayOfMonth));
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -307,6 +315,6 @@ public class ProfileActivity extends AppCompatActivity implements DatePickerDial
                 return;
             default:
                 return;
-    }
+        }
     }
 }

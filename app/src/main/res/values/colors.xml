@@ -10,11 +10,13 @@
 
     <color name="btn_background">#E4A13288</color>
     <color name="orange">#E67926</color>
-    <color name="purple">#6D07B9</color>
+    <color name="purple">#7A2367</color>
+    <color name="blue">#7513F5</color>
 <!--    <color name="btn_background">#e67925</color>-->
     <color name="light_text_color">#575757</color>
     <color name="referalBg">#7A2367</color>
     <color name="referalFullBg">#F8F8F8</color>
     <color name="graytextcolor">#A79F9F</color>
+    <color name="edittext_bg">#D8DBE4</color>
 
 </resources>

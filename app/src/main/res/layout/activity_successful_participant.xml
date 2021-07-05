@@ -114,7 +114,7 @@
                             android:layout_gravity="center"
                             android:gravity="start|center"
                             android:text="Ramesh"
-                            android:layout_marginLeft="@dimen/common_25_size"
+                            android:layout_marginLeft="@dimen/common_30_size"
                             android:textSize="@dimen/common_20_size"
                             android:textColor="@color/black"
                             android:textStyle="normal" />
@@ -163,7 +163,7 @@
                             android:layout_gravity="center"
                             android:gravity="start|center"
                             android:text="Kishor"
-                            android:layout_marginLeft="@dimen/common_25_size"
+                            android:layout_marginLeft="@dimen/common_30_size"
                             android:textSize="@dimen/common_20_size"
                             android:textColor="@color/black"
                             android:textStyle="normal" />
@@ -212,7 +212,7 @@
                             android:layout_gravity="center"
                             android:gravity="start|center"
                             android:text="Priya"
-                            android:layout_marginLeft="@dimen/common_25_size"
+                            android:layout_marginLeft="@dimen/common_30_size"
                             android:textSize="@dimen/common_20_size"
                             android:textColor="@color/black"
                             android:textStyle="normal" />
